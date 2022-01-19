@@ -14,6 +14,9 @@ $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 # Inherit from whyred device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
+# Flags
+TARGET_SUPPORTS_QUICK_TAP := true
+
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := whyred
 PRODUCT_MANUFACTURER := Xiaomi
