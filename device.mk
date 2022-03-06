@@ -142,6 +142,10 @@ PRODUCT_PACKAGES += \
     libdng_sdk.vendor \
     vendor.qti.hardware.camera.device@1.0:64
 
+# Camera
+PRODUCT_PACKAGES += \
+    GcamGoMod
+
 # Shim
 PRODUCT_PACKAGES += \
     libmiwatermark_shim
