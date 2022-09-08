@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/xdroid_whyred.mk
+    $(LOCAL_DIR)/aosp_whyred.mk
 
 COMMON_LUNCH_CHOICES := \
-    xdroid_whyred-user \
-    xdroid_whyred-userdebug \
-    xdroid_whyred-eng
+    aosp_whyred-user \
+    aosp_whyred-userdebug \
+    aosp_whyred-eng
