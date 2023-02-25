@@ -8,14 +8,15 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common PixelExperience stuff.
+# Inherit some common PixelOS stuff.
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
-# PixelExperience Properties
-TARGET_INCLUDE_WIFI_EXT := true
-TARGET_GAPPS_ARCH := arm64
+# PixelOS Properties
 TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_GAPPS_ARCH := arm64
 TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_INCLUDE_LIVE_WALLPAPERS := true
+TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
 
 # Inherit from whyred device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
